@@ -1,0 +1,58 @@
+[dotenv@17.3.1] injecting env (2) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+Server running on port 5001
+MongoDB Connected
+PayloadTooLargeError: request entity too large
+    at readStream (/Users/nimani/Downloads/order-management-backend/node_modules/raw-body/index.js:155:17)
+    at getRawBody (/Users/nimani/Downloads/order-management-backend/node_modules/raw-body/index.js:108:12)
+    at read (/Users/nimani/Downloads/order-management-backend/node_modules/body-parser/lib/read.js:77:3)
+    at jsonParser (/Users/nimani/Downloads/order-management-backend/node_modules/body-parser/lib/types/json.js:135:5)
+    at Layer.handle [as handle_request] (/Users/nimani/Downloads/order-management-backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/nimani/Downloads/order-management-backend/node_modules/express/lib/router/index.js:317:13)
+    at /Users/nimani/Downloads/order-management-backend/node_modules/express/lib/router/index.js:284:7
+    at router.process_params (/Users/nimani/Downloads/order-management-backend/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/nimani/Downloads/order-management-backend/node_modules/express/lib/router/index.js:275:10)
+    at cors (/Users/nimani/Downloads/order-management-backend/node_modules/cors/lib/index.js:188:7)
+PayloadTooLargeError: request entity too large
+    at readStream (/Users/nimani/Downloads/order-management-backend/node_modules/raw-body/index.js:155:17)
+    at getRawBody (/Users/nimani/Downloads/order-management-backend/node_modules/raw-body/index.js:108:12)
+    at read (/Users/nimani/Downloads/order-management-backend/node_modules/body-parser/lib/read.js:77:3)
+    at jsonParser (/Users/nimani/Downloads/order-management-backend/node_modules/body-parser/lib/types/json.js:135:5)
+    at Layer.handle [as handle_request] (/Users/nimani/Downloads/order-management-backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/nimani/Downloads/order-management-backend/node_modules/express/lib/router/index.js:317:13)
+    at /Users/nimani/Downloads/order-management-backend/node_modules/express/lib/router/index.js:284:7
+    at router.process_params (/Users/nimani/Downloads/order-management-backend/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/nimani/Downloads/order-management-backend/node_modules/express/lib/router/index.js:275:10)
+    at cors (/Users/nimani/Downloads/order-management-backend/node_modules/cors/lib/index.js:188:7)
+PayloadTooLargeError: request entity too large
+    at readStream (/Users/nimani/Downloads/order-management-backend/node_modules/raw-body/index.js:155:17)
+    at getRawBody (/Users/nimani/Downloads/order-management-backend/node_modules/raw-body/index.js:108:12)
+    at read (/Users/nimani/Downloads/order-management-backend/node_modules/body-parser/lib/read.js:77:3)
+    at jsonParser (/Users/nimani/Downloads/order-management-backend/node_modules/body-parser/lib/types/json.js:135:5)
+    at Layer.handle [as handle_request] (/Users/nimani/Downloads/order-management-backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/nimani/Downloads/order-management-backend/node_modules/express/lib/router/index.js:317:13)
+    at /Users/nimani/Downloads/order-management-backend/node_modules/express/lib/router/index.js:284:7
+    at router.process_params (/Users/nimani/Downloads/order-management-backend/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/nimani/Downloads/order-management-backend/node_modules/express/lib/router/index.js:275:10)
+    at cors (/Users/nimani/Downloads/order-management-backend/node_modules/cors/lib/index.js:188:7)
+PayloadTooLargeError: request entity too large
+    at readStream (/Users/nimani/Downloads/order-management-backend/node_modules/raw-body/index.js:155:17)
+    at getRawBody (/Users/nimani/Downloads/order-management-backend/node_modules/raw-body/index.js:108:12)
+    at read (/Users/nimani/Downloads/order-management-backend/node_modules/body-parser/lib/read.js:77:3)
+    at jsonParser (/Users/nimani/Downloads/order-management-backend/node_modules/body-parser/lib/types/json.js:135:5)
+    at Layer.handle [as handle_request] (/Users/nimani/Downloads/order-management-backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/nimani/Downloads/order-management-backend/node_modules/express/lib/router/index.js:317:13)
+    at /Users/nimani/Downloads/order-management-backend/node_modules/express/lib/router/index.js:284:7
+    at router.process_params (/Users/nimani/Downloads/order-management-backend/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/nimani/Downloads/order-management-backend/node_modules/express/lib/router/index.js:275:10)
+    at cors (/Users/nimani/Downloads/order-management-backend/node_modules/cors/lib/index.js:188:7)
+PayloadTooLargeError: request entity too large
+    at readStream (/Users/nimani/Downloads/order-management-backend/node_modules/raw-body/index.js:155:17)
+    at getRawBody (/Users/nimani/Downloads/order-management-backend/node_modules/raw-body/index.js:108:12)
+    at read (/Users/nimani/Downloads/order-management-backend/node_modules/body-parser/lib/read.js:77:3)
+    at jsonParser (/Users/nimani/Downloads/order-management-backend/node_modules/body-parser/lib/types/json.js:135:5)
+    at Layer.handle [as handle_request] (/Users/nimani/Downloads/order-management-backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/nimani/Downloads/order-management-backend/node_modules/express/lib/router/index.js:317:13)
+    at /Users/nimani/Downloads/order-management-backend/node_modules/express/lib/router/index.js:284:7
+    at router.process_params (/Users/nimani/Downloads/order-management-backend/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/nimani/Downloads/order-management-backend/node_modules/express/lib/router/index.js:275:10)
+    at cors (/Users/nimani/Downloads/order-management-backend/node_modules/cors/lib/index.js:188:7)
