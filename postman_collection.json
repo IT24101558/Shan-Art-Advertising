@@ -1,0 +1,125 @@
+{
+    "info": {
+        "_postman_id": "bfa8edb2-3be1-4b77-a8b2-57077a29e006",
+        "name": "Digital Printing Shop - Pricing & Billing API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Quotes",
+            "item": [
+                {
+                    "name": "Generate Quote",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"customerId\": \"1234567890abcdef12345678\",\n    \"materials\": [\n        { \"name\": \"A4 Paper\", \"quantity\": 100, \"unitPrice\": 0.10 }\n    ],\n    \"laborCost\": 50,\n    \"machineCost\": 20,\n    \"discount\": 0\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/quotes/generate",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "quotes",
+                                "generate"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Approve Quote",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "{{baseUrl}}/quotes/QUOTE_ID_HERE/approve",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "quotes",
+                                "QUOTE_ID_HERE",
+                                "approve"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Invoices",
+            "item": [
+                {
+                    "name": "Create Invoice",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"quoteId\": \"QUOTE_ID_HERE\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/invoices/create",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "invoices",
+                                "create"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Payments",
+            "item": [
+                {
+                    "name": "Record Payment",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"invoiceId\": \"INVOICE_ID_HERE\",\n    \"amount\": 50.00,\n    \"paymentMethod\": \"Credit Card\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/payments/record",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "payments",
+                                "record"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "variable": [
+        {
+            "key": "baseUrl",
+            "value": "http://localhost:5000/api"
+        }
+    ]
+}
